@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>street symphony</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="start-btn">start</button>
+        <div id="game-scene" class="hidden">
+            <img id="character" src="player.png" alt="Character">
+            <img id="littleGirl" src="littleGirl.png" alt="littleGirl" class="hidden">
+            <img id="oldLady" src="oldLady.png" alt="oldLady" class="hidden">
+            <img id="cat" src="cat.png" class="hidden" alt="cat">
+            <img id="spiderman" src="spiderman.png" class="hidden" alt="spiderman">
+            <img id="dad" src="dad.png" class="hidden" alt="dad">
+            <div id="coin-tracker" class="hidden">
+                <img src="coin.png" alt="coin" id="coin-icon">
+                <span id="coin-count">0</span>
+            </div>
+            <div id="speech-bubble">
+                <p id="dialogue-text"></p>
+                <div id="name-section" class="hidden">
+                    <input type="text" id="name-input" placeholder="type name...">
+                    <button id="submit-name-btn">done</button>
+                </div>
+                <button id="start-playing-btn" class="hidden">start playing</button>
+                <span id="click-hint">click to continue</span>
+            </div>
+            <div id="minigame-screen" class="hidden">
+                <div id="misses-tracker">Misses: <span id="miss-count">0</span> / 3</div>
+                <div id="notes-container"></div>
+                <img id="player-avatar" src="avatar.png" alt="Player Avatar">
+            </div>
+            <audio id="song-audio" src="Golden.m4a.mp4"></audio>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
